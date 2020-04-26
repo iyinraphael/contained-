@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB778E9B24556AEF00BD5684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB778E9A24556AEF00BD5684 /* AppDelegate.swift */; };
+		EB778E9D24556AEF00BD5684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB778E9C24556AEF00BD5684 /* SceneDelegate.swift */; };
+		EB778EA224556AEF00BD5684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB778EA024556AEF00BD5684 /* Main.storyboard */; };
+		EB778EA424556AF800BD5684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB778EA324556AF800BD5684 /* Assets.xcassets */; };
+		EB778EA724556AF800BD5684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB778EA524556AF800BD5684 /* LaunchScreen.storyboard */; };
+		EBA767A424556C6D00627C06 /* Crab.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA767A324556C6D00627C06 /* Crab.xcassets */; };
+		EBA767A624556CAA00627C06 /* SKSpriteNode+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA767A524556CAA00627C06 /* SKSpriteNode+Utility.swift */; };
+		EBA767A824556CDF00627C06 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA767A724556CDF00627C06 /* Info.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB778E9724556AEF00BD5684 /* crab-jump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crab-jump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB778E9A24556AEF00BD5684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB778E9C24556AEF00BD5684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB778EA124556AEF00BD5684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB778EA324556AF800BD5684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB778EA624556AF800BD5684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB778EA824556AF800BD5684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBA767A324556C6D00627C06 /* Crab.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crab.xcassets; path = ../../../Crab.xcassets; sourceTree = "<group>"; };
+		EBA767A524556CAA00627C06 /* SKSpriteNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SKSpriteNode+Utility.swift"; path = "../../../SKSpriteNode+Utility.swift"; sourceTree = "<group>"; };
+		EBA767A724556CDF00627C06 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB778E9424556AEF00BD5684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB778E8E24556AEF00BD5684 = {
+			isa = PBXGroup;
+			children = (
+				EB778E9924556AEF00BD5684 /* crab-jump */,
+				EB778E9824556AEF00BD5684 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB778E9824556AEF00BD5684 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB778E9724556AEF00BD5684 /* crab-jump.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB778E9924556AEF00BD5684 /* crab-jump */ = {
+			isa = PBXGroup;
+			children = (
+				EB778EB224556B6800BD5684 /* Resources */,
+				EB778EB124556B4600BD5684 /* Model */,
+				EB778EB024556B3600BD5684 /* Model Controller */,
+				EB778EAF24556B2B00BD5684 /* View Controller */,
+				EB778EAE24556B2200BD5684 /* View */,
+				EB778EA824556AF800BD5684 /* Info.plist */,
+			);
+			path = "crab-jump";
+			sourceTree = "<group>";
+		};
+		EB778EAE24556B2200BD5684 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB778EA024556AEF00BD5684 /* Main.storyboard */,
+				EB778EA524556AF800BD5684 /* LaunchScreen.storyboard */,
+				EBA767A724556CDF00627C06 /* Info.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB778EAF24556B2B00BD5684 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		EB778EB024556B3600BD5684 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		EB778EB124556B4600BD5684 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBA767A524556CAA00627C06 /* SKSpriteNode+Utility.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB778EB224556B6800BD5684 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB778E9C24556AEF00BD5684 /* SceneDelegate.swift */,
+				EB778E9A24556AEF00BD5684 /* AppDelegate.swift */,
+				EB778EA324556AF800BD5684 /* Assets.xcassets */,
+				EBA767A324556C6D00627C06 /* Crab.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB778E9624556AEF00BD5684 /* crab-jump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB778EAB24556AF800BD5684 /* Build configuration list for PBXNativeTarget "crab-jump" */;
+			buildPhases = (
+				EB778E9324556AEF00BD5684 /* Sources */,
+				EB778E9424556AEF00BD5684 /* Frameworks */,
+				EB778E9524556AEF00BD5684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "crab-jump";
+			productName = "crab-jump";
+			productReference = EB778E9724556AEF00BD5684 /* crab-jump.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB778E8F24556AEF00BD5684 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Iyin Raphael";
+				TargetAttributes = {
+					EB778E9624556AEF00BD5684 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = EB778E9224556AEF00BD5684 /* Build configuration list for PBXProject "crab-jump" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB778E8E24556AEF00BD5684;
+			productRefGroup = EB778E9824556AEF00BD5684 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB778E9624556AEF00BD5684 /* crab-jump */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB778E9524556AEF00BD5684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB778EA724556AF800BD5684 /* LaunchScreen.storyboard in Resources */,
+				EBA767A424556C6D00627C06 /* Crab.xcassets in Resources */,
+				EB778EA424556AF800BD5684 /* Assets.xcassets in Resources */,
+				EBA767A824556CDF00627C06 /* Info.storyboard in Resources */,
+				EB778EA224556AEF00BD5684 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB778E9324556AEF00BD5684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA767A624556CAA00627C06 /* SKSpriteNode+Utility.swift in Sources */,
+				EB778E9B24556AEF00BD5684 /* AppDelegate.swift in Sources */,
+				EB778E9D24556AEF00BD5684 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB778EA024556AEF00BD5684 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB778EA124556AEF00BD5684 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB778EA524556AF800BD5684 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB778EA624556AF800BD5684 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB778EA924556AF800BD5684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB778EAA24556AF800BD5684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB778EAC24556AF800BD5684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crab-jump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iyinraphael.crab-jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB778EAD24556AF800BD5684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "crab-jump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iyinraphael.crab-jump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB778E9224556AEF00BD5684 /* Build configuration list for PBXProject "crab-jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB778EA924556AF800BD5684 /* Debug */,
+				EB778EAA24556AF800BD5684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB778EAB24556AF800BD5684 /* Build configuration list for PBXNativeTarget "crab-jump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB778EAC24556AF800BD5684 /* Debug */,
+				EB778EAD24556AF800BD5684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB778E8F24556AEF00BD5684 /* Project object */;
+}
