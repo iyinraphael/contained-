@@ -14,14 +14,61 @@
                     <view key="view" contentMode="scaleToFill" id="FP2-9t-8Mx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zOu-Nt-ZVL">
+                                <rect key="frame" x="156" y="393.5" width="102" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F6p-dG-rVN">
+                                        <rect key="frame" x="0.0" y="0.0" width="102" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snk-oI-dXP">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nt9-wK-dA7">
+                                                <rect key="frame" x="53" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="toggleRoll:" destination="zL3-Z5-T3m" eventType="valueChanged" id="yPk-Vx-HFp"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Idg-IX-WEC">
+                                        <rect key="frame" x="0.0" y="39" width="102" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2w-FX-crO">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJC-Jh-QCr">
+                                                <rect key="frame" x="53" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="toggleZoom:" destination="zL3-Z5-T3m" eventType="valueChanged" id="Zh6-o8-QdS"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zOu-Nt-ZVL" firstAttribute="top" secondItem="an1-Ja-FaT" secondAttribute="top" constant="349.5" id="IrK-1Z-Lbl"/>
+                            <constraint firstItem="zOu-Nt-ZVL" firstAttribute="centerX" secondItem="an1-Ja-FaT" secondAttribute="centerX" id="cXB-Hw-OfB"/>
+                            <constraint firstItem="zOu-Nt-ZVL" firstAttribute="centerY" secondItem="an1-Ja-FaT" secondAttribute="centerY" id="g99-Av-M51"/>
+                            <constraint firstItem="an1-Ja-FaT" firstAttribute="trailing" secondItem="zOu-Nt-ZVL" secondAttribute="trailing" constant="156" id="juf-Qj-ZWr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="an1-Ja-FaT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" image="settings" id="cIc-Cl-bhL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBU-dI-XmD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-619" y="58"/>
+            <point key="canvasLocation" x="-620.28985507246387" y="57.589285714285708"/>
         </scene>
         <!--Play-->
         <scene sceneID="xpm-Xv-0YN">
