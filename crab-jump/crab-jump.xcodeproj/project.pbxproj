@@ -15,6 +15,10 @@
 		EBA767A424556C6D00627C06 /* Crab.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA767A324556C6D00627C06 /* Crab.xcassets */; };
 		EBA767A624556CAA00627C06 /* SKSpriteNode+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA767A524556CAA00627C06 /* SKSpriteNode+Utility.swift */; };
 		EBA767A824556CDF00627C06 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA767A724556CDF00627C06 /* Info.storyboard */; };
+		EBA767AB245594DD00627C06 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA767AA245594DD00627C06 /* Settings.swift */; };
+		EBA767AD2455975A00627C06 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA767AC2455975A00627C06 /* GameViewController.swift */; };
+		EBA767AF2455978D00627C06 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA767AE2455978D00627C06 /* InfoViewController.swift */; };
+		EBA767B12455979F00627C06 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA767B02455979F00627C06 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,11 @@
 		EBA767A324556C6D00627C06 /* Crab.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Crab.xcassets; path = ../../../Crab.xcassets; sourceTree = "<group>"; };
 		EBA767A524556CAA00627C06 /* SKSpriteNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SKSpriteNode+Utility.swift"; path = "../../../SKSpriteNode+Utility.swift"; sourceTree = "<group>"; };
 		EBA767A724556CDF00627C06 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		EBA767A92455946500627C06 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EBA767AA245594DD00627C06 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EBA767AC2455975A00627C06 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EBA767AE2455978D00627C06 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		EBA767B02455979F00627C06 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,7 @@
 				EB778EAF24556B2B00BD5684 /* View Controller */,
 				EB778EAE24556B2200BD5684 /* View */,
 				EB778EA824556AF800BD5684 /* Info.plist */,
+				EBA767A92455946500627C06 /* README.md */,
 			);
 			path = "crab-jump";
 			sourceTree = "<group>";
@@ -83,6 +93,9 @@
 		EB778EAF24556B2B00BD5684 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EBA767AC2455975A00627C06 /* GameViewController.swift */,
+				EBA767AE2455978D00627C06 /* InfoViewController.swift */,
+				EBA767B02455979F00627C06 /* SettingsViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -98,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA767A524556CAA00627C06 /* SKSpriteNode+Utility.swift */,
+				EBA767AA245594DD00627C06 /* Settings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,8 +200,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA767AD2455975A00627C06 /* GameViewController.swift in Sources */,
 				EBA767A624556CAA00627C06 /* SKSpriteNode+Utility.swift in Sources */,
+				EBA767B12455979F00627C06 /* SettingsViewController.swift in Sources */,
 				EB778E9B24556AEF00BD5684 /* AppDelegate.swift in Sources */,
+				EBA767AB245594DD00627C06 /* Settings.swift in Sources */,
+				EBA767AF2455978D00627C06 /* InfoViewController.swift in Sources */,
 				EB778E9D24556AEF00BD5684 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
