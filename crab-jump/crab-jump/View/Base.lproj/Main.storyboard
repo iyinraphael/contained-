@@ -77,14 +77,23 @@
                     <view key="view" contentMode="scaleToFill" id="mXC-Dp-bCx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <skView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xfe-ZN-cRc">
+                                <rect key="frame" x="0.0" y="33" width="414" height="780"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </skView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="eXy-6T-lJ5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Play" image="game_controller" id="b3Y-X7-WOQ"/>
+                    <connections>
+                        <outlet property="skView" destination="Xfe-ZN-cRc" id="MmH-3k-dgT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pnt-S5-RHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1368" y="58"/>
+            <point key="canvasLocation" x="-1368.1159420289855" y="57.589285714285708"/>
         </scene>
         <!--InfoNavigation-->
         <scene sceneID="2w4-Mx-GxJ">
