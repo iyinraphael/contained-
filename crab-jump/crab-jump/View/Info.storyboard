@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Info View Controller-->
+        <!--Info-->
         <scene sceneID="bOk-xz-mVi">
             <objects>
                 <viewController id="gtG-Xy-hUM" customClass="InfoViewController" customModule="crab_jump" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,8 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRABS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T27-uE-FYp">
-                                <rect key="frame" x="126.5" y="446" width="161" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRABS" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T27-uE-FYp">
+                                <rect key="frame" x="126.5" y="422" width="161" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="iBN-rE-Xm9"/>
+                                    <constraint firstAttribute="height" constant="57" id="v0k-FS-ZLg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -24,20 +28,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="RDU-i2-8Nk" firstAttribute="bottom" secondItem="T27-uE-FYp" secondAttribute="bottom" constant="358" id="05G-mO-Fsa"/>
                             <constraint firstItem="T27-uE-FYp" firstAttribute="centerX" secondItem="RDU-i2-8Nk" secondAttribute="centerX" id="T1i-Bu-cFE"/>
                             <constraint firstItem="T27-uE-FYp" firstAttribute="centerY" secondItem="RDU-i2-8Nk" secondAttribute="centerY" id="cgq-lo-Wz3"/>
-                            <constraint firstItem="T27-uE-FYp" firstAttribute="leading" secondItem="RDU-i2-8Nk" secondAttribute="leading" constant="126.5" id="wbs-yk-KNx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RDU-i2-8Nk"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" id="rL2-La-Xot"/>
                     <navigationItem key="navigationItem" id="VKw-Mv-P5B">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="kG1-zk-0cU">
                             <connections>
-                                <segue destination="XhN-LD-XPV" kind="showDetail" id="JNq-Mt-C8l"/>
+                                <segue destination="XhN-LD-XPV" kind="show" id="JNq-Mt-C8l"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejf-DF-zfj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,12 +56,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRc-Ez-BYh">
-                                <rect key="frame" x="122.5" y="421.5" width="169" height="58"/>
+                                <rect key="frame" x="122.5" y="397.5" width="169" height="57.5"/>
                                 <string key="text">Tap to move the 
 crab
  
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -66,7 +70,6 @@ crab
                         <constraints>
                             <constraint firstItem="BRc-Ez-BYh" firstAttribute="centerX" secondItem="9HF-uK-1lg" secondAttribute="centerX" id="Bnj-tL-MkT"/>
                             <constraint firstItem="BRc-Ez-BYh" firstAttribute="leading" secondItem="9HF-uK-1lg" secondAttribute="leading" constant="122.5" id="HhT-4t-5C8"/>
-                            <constraint firstItem="9HF-uK-1lg" firstAttribute="bottom" secondItem="BRc-Ez-BYh" secondAttribute="bottom" constant="333.5" id="j3v-kv-KyG"/>
                             <constraint firstItem="BRc-Ez-BYh" firstAttribute="centerY" secondItem="9HF-uK-1lg" secondAttribute="centerY" id="xVD-sT-rbU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9HF-uK-1lg"/>
@@ -94,19 +97,17 @@ crab
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCF-Nk-Rb3">
-                                <rect key="frame" x="122.5" y="421.5" width="169" height="58"/>
-                                <string key="text">Tap to move the 
-crab
+                                <rect key="frame" x="122.5" y="397.5" width="169" height="57.5"/>
+                                <string key="text">Let's play
  
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1DS-KA-UVa" firstAttribute="bottom" secondItem="rCF-Nk-Rb3" secondAttribute="bottom" constant="333.5" id="7gK-oe-eJ7"/>
                             <constraint firstItem="rCF-Nk-Rb3" firstAttribute="leading" secondItem="1DS-KA-UVa" secondAttribute="leading" constant="122.5" id="RxW-X1-7mS"/>
                             <constraint firstItem="rCF-Nk-Rb3" firstAttribute="centerY" secondItem="1DS-KA-UVa" secondAttribute="centerY" id="UIs-5a-7Qe"/>
                             <constraint firstItem="rCF-Nk-Rb3" firstAttribute="centerX" secondItem="1DS-KA-UVa" secondAttribute="centerX" id="y5h-gU-cWc"/>
@@ -131,7 +132,7 @@ crab
         <!--Navigation Controller-->
         <scene sceneID="ZaD-jA-fWb">
             <objects>
-                <navigationController storyboardIdentifier="InfoNavigation" automaticallyAdjustsScrollViewInsets="NO" id="8fX-hz-rm6" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="InfoNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8fX-hz-rm6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J4B-Ft-1oI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -147,4 +148,7 @@ crab
             <point key="canvasLocation" x="73.913043478260875" y="75.669642857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="info" width="30" height="30"/>
+    </resources>
 </document>
